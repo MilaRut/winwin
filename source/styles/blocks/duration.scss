@@ -1,0 +1,46 @@
+.duration {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+
+    @include vp-1280 {
+      padding-top: 9px;
+    }
+  }
+}
+
+.duration__title {
+  letter-spacing: -0.05em;
+  margin-bottom: 29px;
+  font-size: 40px;
+
+  @include vp-1280 {
+    letter-spacing: -0.03em;
+    font-size: 64px;
+    margin-bottom: 52px;
+  }
+}
+
+.duration__date {
+  letter-spacing: -0.03em;
+  margin-bottom: 26px;
+
+  @include vp-1280 {
+    margin-bottom: 44px;
+    letter-spacing: 0;
+  }
+}
+
+.duration__subtitle {
+  padding: 0 30px;
+  letter-spacing: -0.03em;
+  line-height: 1.28;
+
+  @include vp-1280 {
+    max-width: 45%;
+    margin: 0 auto;
+    margin-bottom: 52px;
+    line-height: 1.15;
+  }
+}

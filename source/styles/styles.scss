@@ -1,0 +1,26 @@
+/* VENDOR */
+@import "./vendor/swiper";
+@import "./vendor/normalize";
+
+/* GLOBAL */
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/global.scss";
+@import "./common/fonts.scss";
+@import "./common/utils.scss";
+@import "./common/container.scss";
+@import "./common/swipers.scss";
+
+/* BLOCKS */
+@import "./blocks/btn.scss";
+@import "./blocks/header.scss";
+@import "./blocks/lang-switcher.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/duration.scss";
+@import "./blocks/rewards.scss";
+@import "./blocks/rules.scss";
+@import "./blocks/leaderboard.scss";
+@import "./blocks/faq.scss";
+@import "./blocks/cta.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";

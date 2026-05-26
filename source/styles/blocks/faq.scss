@@ -1,0 +1,122 @@
+.faq {
+  background: $color-ivory;
+  color: $color-racing-green;
+  padding-top: 65px;
+
+  @include vp-1280 {
+    padding-top: 129px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.faq__title {
+  margin-bottom: 32px;
+  text-align: left;
+  align-self: flex-start;
+  letter-spacing: -.08em;
+
+  @include vp-1280 {
+    margin-bottom: 68px;
+    align-self: center;
+    text-align: center;
+    letter-spacing: -.03em;
+  }
+}
+
+.faq__list {
+  width: 100%;
+  margin-bottom: 40px;
+
+  details {
+    padding: 12px 19px;
+    border: 1px solid $color-racing-green;
+    border-top: none;
+
+    &:first-child {
+      border-top: 1px solid $color-racing-green;
+    }
+
+    @include vp-1280 {
+      padding: 18px 32px;
+    }
+  }
+}
+
+.faq__question {
+  @include font-settings(500, 16px, 1.2);
+  position: relative;
+  padding: 6px 0;
+  padding-right: 32px;
+  cursor: pointer;
+
+  @include vp-1280 {
+    font-size: 20px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid $color-racing-green;
+    border-bottom: 2px solid $color-racing-green;
+    translate: 0 -50%;
+    rotate: 45deg;
+    transition: transform $trans-default;
+
+    details[open] & {
+      transform: scale(-1, -1);
+      top: 50%;
+    }
+  }
+}
+
+.faq__answer {
+  @include font-settings(400, 14px, 1.2);
+  padding-top: 10px;
+
+  @include vp-1280 {
+    font-size: 17px;
+  }
+}
+
+.faq__button {
+  @include font-settings(500, 18px, 1);
+  color: $color-jewel;
+  width: fit-content;
+  min-height: 42px;
+  background: $color-transparent;
+  border: 1px solid $color-jewel;
+  margin: 0 auto;
+  padding: 10px 24px;
+  cursor: pointer;
+
+  @include vp-768 {
+    display: none;
+  }
+
+  .is-collapsed {
+    display: block;
+  }
+
+  .is-expanded {
+    display: none;
+  }
+
+  &.is-active {
+    .is-collapsed {
+      display: none;
+    }
+
+    .is-expanded {
+      display: block;
+    }
+  }
+}

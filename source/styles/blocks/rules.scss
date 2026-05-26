@@ -1,0 +1,48 @@
+.rules {
+  padding-top: 48px;
+
+  @include vp-1280 {
+    padding-top: 60px;
+    padding-bottom: 44px;
+  }
+}
+
+.rules__title {
+  text-align: left;
+  letter-spacing: -0.07em;
+  margin-bottom: 37px;
+
+  @include vp-1280 {
+    text-align: center;
+    margin-bottom: 77px;
+    letter-spacing: -.03em;
+  }
+}
+
+.rules__list {
+  @include vp-768 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  @include vp-1280 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 68px;
+  }
+}
+
+.rules__item-title {
+  margin-bottom: 16px;
+  text-align: left;
+  letter-spacing: -0.07em;
+
+  @include vp-1280 {
+    margin-bottom: 56px;
+    letter-spacing: -.03em;
+  }
+}
+
+.rules__text {
+  @include font-settings (500, 16px, 1.3);
+}

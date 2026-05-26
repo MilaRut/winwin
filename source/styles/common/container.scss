@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include vp-1280 {
+    padding: 0 32px;
+  }
+}

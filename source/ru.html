@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta name="description" content="WinWin landing">
+  <title>WinWin</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+
+  <link rel="preload" href="./fonts/HelveticaNeue-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Roman.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Medium.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Roman.woff" type="font/woff" as="font" crossorigin="anonymous">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body style="background-image: url('./images/hero-bg@2x.webp');">
+  <div class="wrapper">
+    <header class="header header--default">
+      <div class="container">
+        <div class="header__logo">
+          <svg width="78" height="32" fill="currentColor">
+            <use xlink:href="./icons/stack.svg#logo-small"></use>
+          </svg>
+        </div>
+        <nav class="header__nav" id="nav">
+          <ul class="header__nav-list list-reset">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#rewards">Rewards</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#rules">Rules</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#leaderboard">Leaderboard</a>
+            </li>
+          </ul>
+          <div class="header__lang-switcher lang-switcher">
+            <button class="lang-switcher__btn js-dropdown-trigger" data-id="#lang">
+              <span class="lang-switcher__flag">
+                <img src="./images/ru@2x.webp" width="24" height="24" alt="RU">
+              </span>
+              <span class="lang-switcher__current">RU</span>
+            </button>
+            <div class="lang-switcher__dropdown" id="lang">
+              <a href="/" class="lang-switcher__link">
+                <span class="lang-switcher__flag">
+                  <img src="./images/en@2x.webp" width="24" height="24" alt="EN">
+                </span>
+                <span>EN</span>
+              </a>
+              <a href="ru.html" class="lang-switcher__link">
+                <span class="lang-switcher__flag">
+                  <img src="./images/ru@2x.webp" width="24" height="24" alt="RU">
+                </span>
+                <span>RU</span>
+              </a>
+            </div>
+          </div>
+          <ul class="header__socials-list list-reset">
+            <li class="header__socials-item">
+              <a class="header__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__socials-item">
+              <a class="header__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__socials-item">
+              <a class="header__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header__nav-btn js-dropdown-trigger" data-id="#nav">
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__logo">
+            <img src="./images/logo-large.svg" width="151" height="40" alt="WinWin Partners.">
+          </div>
+          <h1 class="hero__page-title title">performance challenge</h1>
+          <p class="hero__subtitle subtitle">В честь дня рождения WINWIN Partners мы запускаем масштабную партнерскую
+            акцию.
+            <br>
+            Соревнование, где результат определяется только цифрами, а призы — уровнем вашего результата.
+          </p>
+          <div class="hero__image-top">
+            <img src="./images/hero-top@2x.webp" width="328" height="159" alt="WinWin.">
+          </div>
+          <div class="hero__image-btm">
+            <img src="./images/hero-btm@2x.webp" width="173" height="39" alt="WinWin.">
+          </div>
+          <a href="#" class="hero__button btn">Присоединиться</a>
+        </div>
+      </section>
+      <section class="duration">
+        <div class="container">
+          <h2 class="duration__title title">Duration</h2>
+          <p class="duration__date title">[ 15.06 - 15.08 ]</p>
+          <p class="duration__subtitle subtitle">Акция с призовым фондом более $30.000 уже стартовала
+            <br>
+            Жми «присоединиться» и получи шанс выиграть Rolex Datejust и денежные призы до $10.000
+          </p>
+        </div>
+      </section>
+      <section class="rewards" id="rewards">
+        <div class="container">
+          <h2 class="rewards__title title">Main rewards</h2>
+          <p class="rewards__subtitle subtitle">Система вознаграждений построена по уровням.
+            Достигая уровня, вы получаете доступ к награде и можете выбрать: приз или его денежный эквивалент.
+          </p>
+        </div>
+        <div class="rewards__swiper swiper" id="rewards-swiper">
+          <ul class="rewards__list list-reset swiper-wrapper">
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-1@2x.webp" width="368" height="368" alt="1st PLACE | $10.000">
+              </div>
+              <p class="rewards__place">1st PLACE | $10.000</p>
+              <p class="rewards__reward">Rolex Datejust</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-2@2x.webp" width="368" height="368" alt="2nd PLACE | $5,000">
+              </div>
+              <p class="rewards__place">2nd place | $5,000</p>
+              <p class="rewards__reward">Professional gaming setup Fanatec Podium</p>
+              <p class="rewards__reward">LV Horizon 55 Suitcase</p>
+              <p class="rewards__reward">Apple Vision Pro 1TB</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-3@2x.webp" width="368" height="368" alt="3rd PLACE | $3,000">
+              </div>
+              <p class="rewards__place">3rd PLACE | $3,000</p>
+              <p class="rewards__reward">MacBook Pro 14-inch Space Black</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-4@2x.webp" width="368" height="368" alt="4th-10th PLACES | $1,000">
+              </div>
+              <p class="rewards__place">4th-10th PLACES | $1,000</p>
+              <p class="rewards__reward">Rimowa Essential Suitcase</p>
+              <p class="rewards__reward">iPad Mini Gold 256 GB Wifi + Cellular</p>
+              <p class="rewards__reward">Garmin Enduro 3</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-5@2x.webp" width="368" height="368" alt="11th-20th PLACES | $300">
+              </div>
+              <p class="rewards__place">11th-20th PLACES | $300</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-5@2x.webp" width="368" height="368" alt="21st-50th PLACES | $200">
+              </div>
+              <p class="rewards__place">21st-50th PLACES | $200</p>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="rules" id="rules">
+        <div class="container">
+          <h2 class="rules__title title">Rules</h2>
+          <div class="rules__swiper swiper" id="rules-swiper">
+            <ul class="rules__list list-reset swiper-wrapper">
+              <li class="rules__item swiper-slide">
+                <p class="rules__item-title title">[ 1 ]</p>
+                <p class="rules__text">Свяжитесь с персональным менеджером (или полина)</p>
+                <p class="rules__text">Сообщите вашему персональному affiliate-менеджеру о желании участвовать в акции.
+                  Если у вас еще нет партнерского аккаунта – зарегистрируйтесь в WINWIN Partners, после чего вам будет
+                  назначен менеджер.</p>
+              </li>
+              <li class="rules__item swiper-slide">
+                <p class="rules__item-title title">[ 2 ]</p>
+                <p class="rules__text">Приводите трафик и наращивайте объем</p>
+                <p class="rules__text">Заливайте трафик на бренд, участвующий в акции: WinWinBet.
+                  Учитываются только подтвержденные FTD и депозиты. Общая сумма депозитов за период акции должна
+                  составлять не менее $10000.
+                </p>
+              </li>
+              <li class="rules__item swiper-slide">
+                <p class="rules__item-title title">[ 3 ]</p>
+                <p class="rules__text">Получайте POINTS</p>
+                <p class="rules__text">POINTS начисляются по прозрачной системе:<br>
+                  1 подтвержденный FTD = 1 POINT<br>
+                  $100 суммы новых депозитов = 1 POINT
+                </p>
+              </li>
+              <li class="rules__item swiper-slide">
+                <p class="rules__item-title title">[ 4 ]</p>
+                <p class="rules__text">Занимайте позицию в лидерборде</p>
+                <p class="rules__text">Ваше место определяется количеством набранных POINTS.
+                  Чем выше ваша позиция – тем выше итоговое вознаграждение.
+                </p>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="leaderboard" id="leaderboard">
+        <div class="container">
+          <div class="leaderboard__image">
+            <img src="./images/chips@2x.webp" width="131" height="128" alt="">
+          </div>
+          <div class="leaderboard__heading">
+            <p class="leaderboard__date">05 JUNE | 2026</p>
+            <p class="leaderboard__text">WINWIN Partners</p>
+          </div>
+          <h2 class="leaderboard__title title">Leaderboard</h2>
+          <div class="leaderboard__table">
+            <table>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>09</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 class="faq__title title">FAQ</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary class="faq__question">Кто может участвовать в акции?</summary>
+              <p class="faq__answer">В акции участвуют все партнёры WINWIN Partners, имеющие личный кабинет на сайте
+                партнёрской программы и выполнившие условия акции.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Период проведения акции</summary>
+              <p class="faq__answer">Период проведения акции: с 01.05.2026 по 30.06.2026.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Какие условия необходимо выполнить, чтобы получить возможность выиграть
+                главный приз?</summary>
+              <p class="faq__answer">Зарегистрироваться на сайте партнёрской программы и набрать минимум 200 POINTS в
+                период проведения акции. Если у вас уже есть личный кабинет – дополнительная регистрация не требуется.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Какие бренды участвуют в акции?</summary>
+              <p class="faq__answer">В акции участвует один бренд: WinWinBet.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Какие GEO участвуют в акции?</summary>
+              <p class="faq__answer">В акции участвуют все GEO, доступные на бренде WinWinBet.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Каким образом начисляются поинты?</summary>
+              <p class="faq__answer">1 подтверждённый FTD = 1 поинт<br>$100 суммы новых депозитов = 1 POINT</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Какие депозиты учитываются?</summary>
+              <p class="faq__answer">Учитываются все подтверждённые депозиты игроков (FTD) в период акции. Общая сумма
+                депозитов за период акции должна составлять не менее $10 000.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Какие источники трафика запрещены?</summary>
+              <p class="faq__answer">Запрещены: мотивированный трафик, SMS-рассылки, бренд-трафик и другие виды трафика,
+                не согласованные с менеджером.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Нужна ли верификация для участия?</summary>
+              <p class="faq__answer">Для участия в акции верификация не требуется. Для получения призов или выплат может
+                потребоваться прохождение KYC.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Как часто обновляется лидерборд?</summary>
+              <p class="faq__answer">Лидерборд обновляется три раза в неделю — по понедельникам, средам и пятницам.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Какие призы предусмотрены в акции?</summary>
+              <p class="faq__answer">
+                Победители определяются по итогам лидерборда на основе количества набранных POINTS.<br>
+                ● 1-е место – партнёр получает приз или денежную выплату в эквивалентном размере $10 000<br>
+                ● 2-е место – партнёр получает приз или денежную выплату в эквивалентном размере $5 000<br>
+                ● 3-е место – партнёр получает приз или денежную выплату в эквивалентном размере $3 000<br>
+                ● 4–10 места – партнёры получают приз или денежную выплату в эквивалентном размере $1 000<br>
+                ● 11–20 места – партнёры получают денежную выплату в размере $300<br>
+                ● 21–50 места – партнёры получают денежную выплату в размере $200
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Когда подводятся итоги и когда выдаются призы?</summary>
+              <p class="faq__answer">
+                Итоги акции подводятся 3 июля 2026 года. Финальный лидерборд будет обновлён и опубликован 03.07.2026 на
+                лендинге акции.<br>
+                Обязательным условием для всех участников является достижение суммарного объема депозитов не менее $10
+                000 за весь период акции.<br>
+                Участники, не выполнившие данное условие, не учитываются при формировании итогового рейтинга.<br>
+                Начисление и выдача призов осуществляется в течение 14 дней после подведения итогов.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">К кому обращаться по вопросам акции?</summary>
+              <p class="faq__answer">По всем вопросам, связанным с акцией, обращайтесь к вашему affiliate-менеджеру.</p>
+            </details>
+          </div>
+          <button class="faq__button">
+            <span class="is-collapsed">Показать больше</span>
+            <span class="is-expanded">Показать меньше</span>
+          </button>
+        </div>
+      </section>
+      <section class="cta" style="background-image: url('./images/cta-bg@2x.webp');">
+        <div class="container">
+          <h2 class="cta__title title">JOIN THE CHALLENGE</h2>
+          <p class="cta__subtitle subtitle">Подключайтесь к акции и масштабируйте текущие объемы.
+            Следующий уровень – за вами
+          </p>
+          <a href="#" class="cta__button btn">Присоединиться</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" style="background-image: url('./images/footer-bg@2x.webp');">
+      <div class="container">
+        <div class="footer__contacts contacts" id="contacts">
+          <h2 class="contacts__title title">Контакты</h2>
+          <p class="contacts__subtitle subtitle">Остались вопросы? Свяжитесь с нашим менеджером</p>
+          <ul class="contacts__list list-reset">
+            <li class="contacts__item">
+              <a href="mailto:support@winwinbet.partners" class="contacts__link">
+                <svg width="20" height="20" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#email"></use>
+                </svg>
+                <span>| support@winwinbet.partners</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="https://t.me/Winwinpartners_support" target="_blank" class="contacts__link">
+                <svg width="20" height="20" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#telegram"></use>
+                </svg>
+                <span>| @Winwinpartners_support</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list list-reset">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#rewards">Rewards</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#rules">Rules</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#leaderboard">Leaderboard</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <ul class="footer__socials-list list-reset">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__btm">
+          <div class="footer__logo">
+            <img src="./images/logo-small.svg" width="89" height="38" alt="WinWin.">
+          </div>
+          <p class="footer__about">WINWIN Partners — affiliate-программа, где принцип win-win измеряется результатами.
+            Сильная аналитика, продуктовая экспертиза и worldwide-покрытие помогают партнерам стабильно расти и
+            масштабировать свой доход.</p>
+          <p class="footer__copyright">All Rights Reserved © 2026</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

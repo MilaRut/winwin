@@ -1,0 +1,19 @@
+.btn {
+  @include font-settings(500, 18px, 1);
+  color: $color-default-white;
+  background-color: $color-jewel;
+  min-width: 220px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 24px;
+  will-change: background-color, color;
+  transition: background-color $trans-default, color $trans-default;
+
+  @include hover {
+    background-color: $color-quill-grey;
+    color: $color-racing-green;
+  }
+}

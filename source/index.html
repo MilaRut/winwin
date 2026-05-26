@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta name="description" content="WinWin landing">
+  <title>WinWin</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+
+  <link rel="preload" href="./fonts/HelveticaNeue-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Roman.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Medium.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/HelveticaNeue-Roman.woff" type="font/woff" as="font" crossorigin="anonymous">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body style="background-image: url('./images/hero-bg@2x.webp');">
+  <div class="wrapper">
+    <header class="header header--default">
+      <div class="container">
+        <div class="header__logo">
+          <svg width="78" height="32" fill="currentColor">
+            <use xlink:href="./icons/stack.svg#logo-small"></use>
+          </svg>
+        </div>
+        <nav class="header__nav" id="nav">
+          <ul class="header__nav-list list-reset">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#rewards">Rewards</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#rules">Rules</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#leaderboard">Leaderboard</a>
+            </li>
+          </ul>
+          <div class="header__lang-switcher lang-switcher">
+            <button class="lang-switcher__btn js-dropdown-trigger" data-id="#lang">
+              <span class="lang-switcher__flag">
+                <img src="./images/en@2x.webp" width="24" height="24" alt="EN">
+              </span>
+              <span class="lang-switcher__current">EN</span>
+            </button>
+            <div class="lang-switcher__dropdown" id="lang">
+              <a href="/" class="lang-switcher__link">
+                <span class="lang-switcher__flag">
+                  <img src="./images/en@2x.webp" width="24" height="24" alt="EN">
+                </span>
+                <span>EN</span>
+              </a>
+              <a href="ru.html" class="lang-switcher__link">
+                <span class="lang-switcher__flag">
+                  <img src="./images/ru@2x.webp" width="24" height="24" alt="RU">
+                </span>
+                <span>RU</span>
+              </a>
+            </div>
+          </div>
+          <ul class="header__socials-list list-reset">
+            <li class="header__socials-item">
+              <a class="header__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__socials-item">
+              <a class="header__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__socials-item">
+              <a class="header__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header__nav-btn js-dropdown-trigger" data-id="#nav">
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__logo">
+            <img src="./images/logo-large.svg" width="151" height="40" alt="WinWin Partners.">
+          </div>
+          <h1 class="hero__page-title title">performance challenge</h1>
+          <p class="hero__subtitle subtitle">In honour of WINWIN Partners' birthday, we are launching a large-scale
+            affiliate campaign.<br>
+            A competition where the result is determined solely by numbers, and the prizes — by the level of your
+            result.
+          </p>
+          <div class="hero__image-top">
+            <img src="./images/hero-top@2x.webp" width="328" height="159" alt="WinWin.">
+          </div>
+          <div class="hero__image-btm">
+            <img src="./images/hero-btm@2x.webp" width="173" height="39" alt="WinWin.">
+          </div>
+          <a href="#" class="hero__button btn">Start Now</a>
+        </div>
+      </section>
+      <section class="duration">
+        <div class="container">
+          <h2 class="duration__title title">Duration</h2>
+          <p class="duration__date title">[ 15.06 - 15.08 ]</p>
+          <p class="duration__subtitle subtitle">The campaign with a prize pool of over $30,000 has already started.<br>
+            Click «Start now» and get a chance to win a Rolex Datejust and cash prizes of up to $10,000.</p>
+        </div>
+      </section>
+      <section class="rewards" id="rewards">
+        <div class="container">
+          <h2 class="rewards__title title">Main rewards</h2>
+          <p class="rewards__subtitle subtitle">The reward system is tiered. Upon reaching a tier, you gain access to a
+            reward and can choose between the prize or its cash equivalent.</p>
+        </div>
+        <div class="rewards__swiper swiper" id="rewards-swiper">
+          <ul class="rewards__list list-reset swiper-wrapper">
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-1@2x.webp" width="368" height="368" alt="1st PLACE | $10.000">
+              </div>
+              <p class="rewards__place">1st PLACE | $10.000</p>
+              <p class="rewards__reward">Rolex Datejust</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-2@2x.webp" width="368" height="368" alt="2nd PLACE | $5,000">
+              </div>
+              <p class="rewards__place">2nd place | $5,000</p>
+              <p class="rewards__reward">Professional gaming setup Fanatec Podium</p>
+              <p class="rewards__reward">LV Horizon 55 Suitcase</p>
+              <p class="rewards__reward">Apple Vision Pro 1TB</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-3@2x.webp" width="368" height="368" alt="3rd PLACE | $3,000">
+              </div>
+              <p class="rewards__place">3rd PLACE | $3,000</p>
+              <p class="rewards__reward">MacBook Pro 14-inch Space Black</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-4@2x.webp" width="368" height="368" alt="4th-10th PLACES | $1,000">
+              </div>
+              <p class="rewards__place">4th-10th PLACES | $1,000</p>
+              <p class="rewards__reward">Rimowa Essential Suitcase</p>
+              <p class="rewards__reward">iPad Mini Gold 256 GB Wifi + Cellular</p>
+              <p class="rewards__reward">Garmin Enduro 3</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-5@2x.webp" width="368" height="368" alt="11th-20th PLACES | $300">
+              </div>
+              <p class="rewards__place">11th-20th PLACES | $300</p>
+            </li>
+            <li class="rewards__item swiper-slide">
+              <div class="rewards__image">
+                <img src="./images/rewards-5@2x.webp" width="368" height="368" alt="21st-50th PLACES | $200">
+              </div>
+              <p class="rewards__place">21st-50th PLACES | $200</p>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="rules" id="rules">
+        <div class="container">
+          <h2 class="rules__title title">Rules</h2>
+          <div class="rules__swiper swiper" id="rules-swiper">
+            <ul class="rules__list list-reset swiper-wrapper">
+              <li class="rules__item swiper-slide">
+                <p class="rules__item-title title">[ 1 ]</p>
+                <p class="rules__text">Contact your personal manager (or manager Polina)</p>
+                <p class="rules__text">Inform your personal affiliate manager of your desire to participate in the
+                  campaign. If you do not have an affiliate account yet, register with WINWIN Partners, after which a
+                  manager will be assigned to you.</p>
+              </li>
+              <li class="rules__item swiper-slide">
+                <p class="rules__item-title title">[ 2 ]</p>
+                <p class="rules__text">Drive traffic and increase volume</p>
+                <p class="rules__text">Drive traffic to the brand participating in the campaign: WinWinBet. Only
+                  confirmed
+                  FTDs and deposits are counted. The total amount of deposits during the campaign period must be at
+                  least
+                  $10,000.</p>
+              </li>
+              <li class="rules__item swiper-slide">
+                <p class="rules__item-title title">[ 3 ]</p>
+                <p class="rules__text">Earn POINTS</p>
+                <p class="rules__text">Points are credited according to a transparent system: 1 confirmed FTD = 1 POINT
+                  $100 in new deposits = 1 POINT</p>
+              </li>
+              <li class="rules__item swiper-slide">
+                <p class="rules__item-title title">[ 4 ]</p>
+                <p class="rules__text">Take your position on the leaderboard</p>
+                <p class="rules__text">Your rank is determined by the number of points you have collected. The higher
+                  your
+                  position, the higher the final reward.</p>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="leaderboard" id="leaderboard">
+        <div class="container">
+          <div class="leaderboard__image">
+            <img src="./images/chips@2x.webp" width="131" height="128" alt="">
+          </div>
+          <div class="leaderboard__heading">
+            <p class="leaderboard__date">05 JUNE | 2026</p>
+            <p class="leaderboard__text">WINWIN Partners</p>
+          </div>
+          <h2 class="leaderboard__title title">Leaderboard</h2>
+          <div class="leaderboard__table">
+            <table>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>09</td>
+                  <td>1234566</td>
+                  <td>7580</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>6543210</td>
+                  <td>7580</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 class="faq__title title">FAQ</h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary class="faq__question">Who can participate in the campaign?</summary>
+              <p class="faq__answer">All WINWIN Partners affiliates who have a personal account on the affiliate
+                programme
+                website and have fulfilled the campaign conditions can participate.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Campaign period</summary>
+              <p class="faq__answer">The campaign period runs from 01.05.2026 to 30.06.2026.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">What conditions must be met to get a chance to win the main prize?
+              </summary>
+              <p class="faq__answer">Register on the affiliate programme website and collect a minimum of 200 points
+                during
+                the campaign period. If you already have a personal account, no additional registration is required.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Which brands are participating in the campaign?</summary>
+              <p class="faq__answer">One brand is participating in the campaign: WinWinBet.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Which GEOs are participating in the campaign?</summary>
+              <p class="faq__answer">All GEOs available on the WinWinBet brand are participating in the campaign.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">How are points credited?</summary>
+              <p class="faq__answer">1 confirmed FTD = 1 point $100 in new deposits = 1 point</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Which deposits are counted?</summary>
+              <p class="faq__answer">All confirmed player deposits (FTDs) during the campaign period are counted. The
+                total
+                amount of deposits during the campaign period must be at least $10,000.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Which traffic sources are prohibited?</summary>
+              <p class="faq__answer">Prohibited sources include: incentivised traffic, SMS mailings, brand traffic, and
+                other types of traffic not approved by the manager.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Is verification required to participate?</summary>
+              <p class="faq__answer">Verification is not required to participate in the campaign. Passing KYC may be
+                required to receive prizes or payouts.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">How often is the leaderboard updated?</summary>
+              <p class="faq__answer">The leaderboard is updated three times a week — on Mondays, Wednesdays, and
+                Fridays.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">What prizes are provided in the campaign?</summary>
+              <p class="faq__answer">The winners are determined by the leaderboard results based on the number of points
+                collected.<br>
+                ●1st place – the affiliate receives a prize or a cash payout in the equivalent amount of $10,000<br>
+                ●2nd place – the affiliate receives a prize or a cash payout in the equivalent amount of $5,000<br>
+                ●3rd place – the affiliate receives a prize or a cash payout in the equivalent amount of $3,000<br>
+                ●4th to 10th places – affiliates receive a prize or a cash payout in the equivalent amount of $1,000<br>
+                ●11th to 20th places – affiliates receive a cash payout of $300<br>
+                ●21st to 50th places – affiliates receive a cash payout of $200</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">When are the results summarised and when are the prizes awarded?
+              </summary>
+              <p class="faq__answer">The results of the campaign will be summarised on the 3rd of July 2026. The final
+                leaderboard will be updated and published on the campaign landing page on 03.07.2026. A mandatory
+                condition
+                for all participants is achieving a total deposit volume of at least $10,000 for the entire campaign
+                period.<br>
+                Participants who fail to meet this condition will not be included in the final ranking. The crediting
+                and
+                issuing of prizes will be carried out within 14 days after the results have been summarised.</p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Who should I contact regarding campaign questions?</summary>
+              <p class="faq__answer">For all questions related to the campaign, please contact your affiliate manager.
+              </p>
+            </details>
+          </div>
+          <button class="faq__button">
+            <span class="is-collapsed">Show more</span>
+            <span class="is-expanded">Show less</span>
+          </button>
+        </div>
+      </section>
+      <section class="cta" style="background-image: url('./images/cta-bg@2x.webp');">
+        <div class="container">
+          <h2 class="cta__title title">JOIN THE&nbsp;CHALLENGE</h2>
+          <p class="cta__subtitle subtitle">Join the campaign and scale your current volumes.<br>The next level is yours
+            to take.</p>
+          <a href="#" class="cta__button btn">Join Now</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" style="background-image: url('./images/footer-bg@2x.webp');">
+      <div class="container">
+        <div class="footer__contacts contacts" id="contacts">
+          <h2 class="contacts__title title">Сontacts</h2>
+          <p class="contacts__subtitle subtitle">Still have questions? Contact our manager.</p>
+          <ul class="contacts__list list-reset">
+            <li class="contacts__item">
+              <a href="mailto:support@winwinbet.partners" class="contacts__link">
+                <svg width="20" height="20" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#email"></use>
+                </svg>
+                <span>| support@winwinbet.partners</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="https://t.me/Winwinpartners_support" target="_blank" class="contacts__link">
+                <svg width="20" height="20" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#telegram"></use>
+                </svg>
+                <span>| @Winwinpartners_support</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list list-reset">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#rewards">Rewards</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#rules">Rules</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#leaderboard">Leaderboard</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <ul class="footer__socials-list list-reset">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                <svg width="24" height="24" fill="currentColor">
+                  <use xlink:href="./icons/stack.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__btm">
+          <div class="footer__logo">
+            <img src="./images/logo-small.svg" width="89" height="38" alt="WinWin.">
+          </div>
+          <p class="footer__about">WINWIN Partners is an affiliate programme where the win-win principle is measured by
+            results. Strong analytics, product expertise, and worldwide coverage help affiliates to grow steadily and
+            scale their income.</p>
+          <p class="footer__copyright">All Rights Reserved © 2026</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

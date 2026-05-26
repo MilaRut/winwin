@@ -1,0 +1,83 @@
+@keyframes wink {
+  100% {
+    background-position-x: -240px;
+  }
+}
+
+@keyframes rotate-coin {
+  100% {
+    background-position-x: -1770px;
+  }
+}
+
+@keyframes rotate-coin-mob {
+  100% {
+    background-position-x: -328px;
+  }
+}
+
+@keyframes rotate-circle {
+  100% {
+    transform: rotate(960deg);
+  }
+}
+
+@keyframes open {
+  100% {
+    background-position-x: -548px;
+  }
+}
+
+@keyframes push {
+  100% {
+    background-position-x: -500px;
+  }
+}
+
+@keyframes bite {
+  100% {
+    background-position-x: -450px;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  100% {
+    transform: translateY(-120px);
+  }
+}
+
+@keyframes bubble {
+  100% {
+    background-position-x: -253px;
+  }
+}
+
+@keyframes star {
+  100% {
+    background-position-x: -66px;
+  }
+}
+
+@keyframes heart {
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes heart-mob {
+  100% {
+    transform: translateY(-100px);
+  }
+}

@@ -1,0 +1,44 @@
+#rewards-swiper {
+
+  .swiper-slide {
+    width: 280px !important;
+    max-width: 280px !important;
+
+    @include vp-1280 {
+      width: 368px !important;
+      max-width: 368px !important;
+    }
+  }
+}
+
+.swiper {
+  padding-bottom: 71px;
+
+  * {
+    user-select: none;
+  }
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-pagination {
+  @include vp-1280 {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ceccdb;
+  background-color: $color-transparent !important;
+  border-radius: 0;
+  margin: 0 6px !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ceccdb !important;
+}
