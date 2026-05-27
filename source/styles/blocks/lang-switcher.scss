@@ -36,7 +36,8 @@
     border-bottom: 2px solid $color-racing-green;
     translate: 0 -50%;
     rotate: 45deg;
-    transition: transform $trans-default;
+    will-change: transform, color;
+    transition: transform $trans-default, color $trans-default;
 
     @include vp-768 {
       border-color: $color-quill-grey;
@@ -46,6 +47,20 @@
   &.is-active::after {
     transform: scale(-1, -1);
     top: 50%;
+  }
+
+  &:hover {
+    .lang-switcher__current {
+      @include vp-768 {
+        color: $color-ivory;
+      }
+    }
+
+    &::after {
+      @include vp-768 {
+        border-color: $color-ivory;
+      }
+    }
   }
 }
 
@@ -60,6 +75,8 @@
   @include font-settings(500, 16px, 1);
   text-transform: uppercase;
   color: $color-jewel;
+  will-change: color;
+  transition: color $trans-default;
 
   @include vp-768 {
     color: $color-quill-grey;
@@ -90,10 +107,11 @@
   align-items: center;
   gap: 8px;
   padding: 8px 10px;
-  will-change: background-color;
-  transition: background-color $trans-default;
+  will-change: background-color, color;
+  transition: background-color $trans-default, color $trans-default;
 
-  @include hover {
+  &:hover {
     background-color: $color-ivory;
+    color: $color-jewel;
   }
 }

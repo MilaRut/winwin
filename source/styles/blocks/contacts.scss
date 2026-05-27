@@ -53,7 +53,7 @@
   will-change: background-color;
   transition: background-color $trans-default;
 
-  @include hover {
+  &:hover {
     background-color: $color-ivory;
   }
 }

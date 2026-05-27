@@ -97,6 +97,13 @@
   margin: 0 auto;
   padding: 10px 24px;
   cursor: pointer;
+  will-change: border-color, color;
+  transition: border-color $trans-default, color $trans-default;
+
+  &:hover {
+    border-color: $color-racing-green;
+    color: $color-racing-green;
+  }
 
   @include vp-768 {
     display: none;

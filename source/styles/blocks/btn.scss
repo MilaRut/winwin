@@ -12,7 +12,7 @@
   will-change: background-color, color;
   transition: background-color $trans-default, color $trans-default;
 
-  @include hover {
+  &:hover {
     background-color: $color-quill-grey;
     color: $color-racing-green;
   }

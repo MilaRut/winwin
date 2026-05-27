@@ -53,29 +53,29 @@
   @include font-settings(500, 16px, 1);
   letter-spacing: -0.02em;
   color: $color-quill-grey;
+  transition: color $trans-default;
 
   @include vp-768 {
     will-change: color;
-    transition: color $trans-default;
+  }
 
-    @include hover {
-      color: $color-ivory;
-    }
+  &:hover {
+    color: $color-ivory;
   }
 }
 
 .footer__socials-link {
+  display: flex;
   padding: 16px;
   color: $color-quill-grey;
-  display: flex;
+  transition: color $trans-default;
 
   @include vp-768 {
     will-change: color;
-    transition: color $trans-default;
+  }
 
-    @include hover {
-      color: $color-ivory;
-    }
+  &:hover {
+    color: $color-ivory;
   }
 }
 
