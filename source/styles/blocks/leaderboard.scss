@@ -75,7 +75,7 @@
 }
 
 .leaderboard__table {
-  max-height: 470px;
+  max-height: 491px;
   overflow-y: auto;
   padding-right: 7px;
 
@@ -87,19 +87,21 @@
   td {
     border: 1px solid $color-ivory;
     padding: 21px 25px;
-    color: $color-ivory;
+    color: $color-ivory !important;
+    pointer-events: none;
+    cursor: default;
 
-    &:nth-child(1) {
+    &:nth-child(1) span {
       @include font-settings(500, 24px, 1);
       letter-spacing: -0.02em;
       text-align: left;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2) span {
       @include font-settings(400, 16px, 1);
     }
 
-    &:nth-child(3) {
+    &:nth-child(3) span {
       @include font-settings(400, 16px, 1);
       text-align: right;
     }

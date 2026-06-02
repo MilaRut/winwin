@@ -47,11 +47,23 @@
   width: 78px;
   height: 32px;
   z-index: 200;
-  color: $color-quill-grey;
 
   @include vp-768 {
     width: 89px;
     height: 38px;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: $color-quill-grey;
+    transition: color $trans-default;
+    will-change: color;
+
+    &:hover {
+      color: $color-ivory;
+    }
   }
 
   svg {
@@ -61,7 +73,7 @@
 }
 
 .header:has(.header__nav.is-active) {
-  .header__logo {
+  .header__logo a {
     color: $color-racing-green;
   }
 }

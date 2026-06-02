@@ -51,7 +51,7 @@
   @include font-settings(500, 16px, 1.2);
   position: relative;
   padding: 6px 0;
-  padding-right: 32px;
+  padding-right: 52px;
   cursor: pointer;
 
   @include vp-1280 {
@@ -81,6 +81,7 @@
 .faq__answer {
   @include font-settings(400, 14px, 1.2);
   padding-top: 10px;
+  padding-right: 52px;
 
   @include vp-1280 {
     font-size: 17px;

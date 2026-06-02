@@ -32,7 +32,7 @@
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  border: 1px solid #ceccdb;
+  border: 1px solid $color-quill-grey;
   background-color: $color-transparent !important;
   border-radius: 0;
   margin: 0 6px !important;
@@ -40,5 +40,5 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #ceccdb !important;
+  background-color: $color-quill-grey !important;
 }
