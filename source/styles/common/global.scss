@@ -12,6 +12,11 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 97px;
+
+  @include vp-768 {
+    scroll-padding-top: 120px;
+  }
 
 }
 
