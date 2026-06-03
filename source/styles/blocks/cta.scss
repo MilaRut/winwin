@@ -4,6 +4,7 @@
   background-position: 82.9% 100%;
   background-repeat: no-repeat;
   background-size: 1199px 412px;
+  padding-top: 64px;
   padding-bottom: 387px;
 
   @include vp-768 {
@@ -13,7 +14,8 @@
   @include vp-1280 {
     background-size: 1920px 660px;
     padding-top: 242px;
-    padding-bottom: 204px;
+    padding-bottom: 193px;
+    background-position: 100% 158%;
   }
 
   .container {

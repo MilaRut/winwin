@@ -1,8 +1,10 @@
 .rewards {
   padding-top: 65px;
+  padding-bottom: 43px;
 
   @include vp-1280 {
     padding-top: 75px;
+    padding-bottom: 51px;
   }
 }
 

@@ -1,19 +1,4 @@
-#rewards-swiper {
-
-  .swiper-slide {
-    width: 280px !important;
-    max-width: 280px !important;
-
-    @include vp-1280 {
-      width: 368px !important;
-      max-width: 368px !important;
-    }
-  }
-}
-
 .swiper {
-  padding-bottom: 71px;
-
   * {
     user-select: none;
   }
@@ -35,10 +20,36 @@
   border: 1px solid $color-quill-grey;
   background-color: $color-transparent !important;
   border-radius: 0;
-  margin: 0 6px !important;
+  margin: 0 8px !important;
   opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
   background-color: $color-quill-grey !important;
+}
+
+#rewards-swiper {
+  padding-bottom: 71px;
+
+  .swiper-slide {
+    width: 280px !important;
+    max-width: 280px !important;
+
+    @include vp-1280 {
+      width: 368px !important;
+      max-width: 368px !important;
+    }
+  }
+}
+
+#rules-swiper {
+  padding-bottom: 68px;
+
+  .swiper-pagination-bullet {
+    border: 1px solid $color-racing-green;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-racing-green !important;
+  }
 }

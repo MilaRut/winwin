@@ -1,9 +1,14 @@
 .rules {
-  padding-top: 48px;
+  padding-top: 64px;
+  padding-bottom: 43px;
+  background-color: $color-ivory;
 
   @include vp-1280 {
-    padding-top: 60px;
-    padding-bottom: 44px;
+    padding-top: 129px;
+    padding-bottom: 51px;
+    background-size: 1920px 991px;
+    background-position: center right;
+    background-repeat: no-repeat;
   }
 }
 
@@ -11,6 +16,7 @@
   text-align: left;
   letter-spacing: -0.07em;
   margin-bottom: 37px;
+  color: $color-racing-green;
 
   @include vp-1280 {
     text-align: center;
@@ -27,27 +33,60 @@
   }
 
   @include vp-1280 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 68px;
+  }
+
+  @include vp-1440 {
+    gap: 270px;
   }
 }
 
 .rules__item-title {
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   text-align: left;
   letter-spacing: -0.07em;
+  color: $color-racing-green;
 
   @include vp-1280 {
-    margin-bottom: 56px;
+    margin-bottom: 53px;
     letter-spacing: -.03em;
   }
 }
 
 .rules__text {
   @include font-settings (500, 16px, 1.3);
+  color: $color-racing-green;
 
   @include vp-1280 {
     font-size: 18px;
+    line-height: 1.22;
+    max-width: 80%;
+  }
+}
+
+.rules__image {
+  position: absolute;
+  top: -68px;
+  right: -28px;
+  width: 139px;
+  height: 109px;
+
+  @include vp-1280 {
+    width: 386px;
+    height: 305px;
+    top: auto;
+    bottom: -349px;
+    right: -100px;
   }
 
+  @include vp-1920 {
+    right: -243px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
