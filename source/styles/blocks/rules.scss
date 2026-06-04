@@ -38,7 +38,7 @@
   }
 
   @include vp-1440 {
-    gap: 270px;
+    gap: 150px;
   }
 }
 
@@ -61,7 +61,6 @@
   @include vp-1280 {
     font-size: 18px;
     line-height: 1.22;
-    max-width: 80%;
   }
 }
 
